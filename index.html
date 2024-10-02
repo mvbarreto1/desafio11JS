@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio11</title>
+</head>
+<body>
+    <div class="container"></div>
+        <header>
+            <h1>Blog Simples</h1>
+        </header>
+
+        <section id="postListSection">
+            <h2>Postagens Recentes</h2>
+            <div id="postList" class="post-list"></div>
+        </section>
+
+        <section id="addPostSection">
+            <h2>Adicionar Nova Postagem</h2>
+            <form id="postForm" class="post-form">
+                <input type="text" id="title" placeholder="Título" required>
+                <textarea id="content" placeholder="Conteúdo" required></textarea>
+                <button type="submit">Adicionar Postagem</button>
+            </form>
+        </section>
+    </div>
+
+    <div id="postDetail" class="hidden post-detail">
+        <button class="back-button" onclick="goBack()">Voltar</button>
+        <h2 id="postTitle"></h2>
+        <p id="postDate"></p>
+        <p id="postContent"></p>
+        
+        <section id="commentsSection">
+            <h3>Comentários</h3>
+            <div id="commentsList" class="comments-list"></div>
+            <form id="commentForm" class="comment-form">
+                <input type="text" id="comment" placeholder="Deixe um comentário" required>
+                <button type="submit">Adicionar Comentário</button>
+            </form>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
